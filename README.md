@@ -39,6 +39,7 @@ fc-cache -rv
 | <kbd>Mod + Ctrl + :arrow_up: :arrow_down: :arrow_left: :arrow_right:  | Resize Windows - Tiling                 |
 | <kbd>Mod + Shift + :arrow_up: :arrow_down: :arrow_left: :arrow_right: | Move Windows - Tiling                   |
 | <kbd>Mod + Shift + Space                                              | Switch between tiling/floating          |
+| <kbd>Mod + Space                                                      | Focus - Tiling/Floating (toggle)        |
 | <kbd>Mod + Left Click (hold)                                          | Move Windows - Floating                 |
 | <kbd>Mod + Right Click (hold)                                         | Resize Windows - Floating               |
 | <kbd>Mod + 1/2/3/4/5/6/7/8/9                                          | Change Workspace                        |
