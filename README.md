@@ -5,7 +5,7 @@ xorg xorg-server xorg-xinit dialog mtools os-prober wpa_supplicant networkmanage
 ```
 ## i3wm
 > **Required**
-``bash
+```bash
 i3-gaps i3lock imagemagick scrot rofi pulseaudio pulseaudio-alsa alsa-utils brightnessctl qt5ct lxsession lxappearance xsettingsd duns libnotify feh gtk-engine-murrine xclip rxvt-unicoe w3m
 ```
 > app
