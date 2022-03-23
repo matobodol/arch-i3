@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Copy your wallpaper to ~/.config/bspwm/wallpaper
+# Command: ~/.wallpaper/wallpaper
+# Or
+# Command: ~/.config/bspwm/wallpaper/wallpaper --set <picture.png> 
+idir="$HOME/.config/i3/.idesktop"
+source $idir
+
+
+Yellow="\033[0;33m"
+NC="\033[0m"
+
+case "$1" in
+-set) feh --bg-fill ~/.config/i3/wallpaper/${2}	;;
+*)
+	list=`ls -a ~/.config/i3/wallpaper/ | egrep "(*.img|*.jpg|*.png|*.svg)"`
+	echo "To add an image to the list, move your image to ~/.wallpaper/"
+	echo -e "${Yellow}\n$list\n${NC}"
+	echo "Type your image_name to change wallpaper.."
+	read -p "example: iLight.png : " wall
+	feh --bg-fill ~/.config/i3/wallpaper/${wall} 
+	sed -i "8s_.*_FEHBG=${wall}_" $idir
+	;;
+esac

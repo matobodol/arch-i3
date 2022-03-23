@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+source ~/.config/i3/.idesktop
+cwall="~/.config/i3/wallpaper"
+
+case "$THEME" in
+iLight)
+	dunst -config ~/.config/dunst/dunstrc-right &
+	feh --bg-scale ~/.config/i3/wallpaper/$FEHBG 
+	xrdb -merge ~/.config/i3/ilight/.Xresources
+	timeout 0.1s xsettingsd -c ~/.config/i3/ilight/.xsettingsd
+	$NOTIFIER -r 13 -i "$ICONDIR/theme.png" -t 3500 -u low "Light Mode" "Change Theme" ;;
+iDark)
+	dunst -config ~/.config/dunst/dunstrc-dark-right &
+	feh --bg-scale ~/.config/i3/wallpaper/$FEHBG 
+	xrdb -merge ~/.config/i3/idark/.Xresources
+	timeout 0.1s xsettingsd -c ~/.config/i3/idark/.xsettingsd
+	$NOTIFIER -r 13 -i "$ICONDIR/theme.png" -t 3500 -u low "Dark Mode" "Change Theme" ;;
+esac
