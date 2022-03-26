@@ -6,7 +6,7 @@ xorg xorg-server xorg-xinit dialog mtools os-prober wpa_supplicant networkmanage
 ## i3wm
 > **Required**
 ```bash
-i3-gaps i3lock imagemagick scrot rofi pulseaudio pulseaudio-alsa alsa-utils brightnessctl qt5ct lxsession lxappearance xsettingsd dunst libnotify feh gtk-engine-murrine xclip rxvt-unicoe w3m
+i3-gaps i3lock imagemagick scrot rofi pulseaudio pulseaudio-alsa alsa-utils brightnessctl qt5ct lxsession lxappearance xsettingsd dunst libnotify feh gtk-engine-murrine xclip rxvt-unicode w3m
 ```
 > app
 ```bash
@@ -16,7 +16,7 @@ firefox nautilus ffmpegthumbnailer geany git htop mpd ncmpcpp neofetch ranger th
 ```bash
 polybar-git
 picom-git
-networkmanager-dmenu
+networkmanager-dmenu-git
 ```
 ## Installing
 ```bash
