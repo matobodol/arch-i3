@@ -10,7 +10,7 @@ capacity_batt="echo -e `cat /sys/class/power_supply/BAT1/capacity`"
 
 #	if [[ `$capacity_batt` = 100 ]]; then
 #		$NOTIFIER -i "$ICONDIR/info.png" -t 5000 "CPU `$cpu_tmp`" "Battery is Full: `${capacity_batt}`%"
-	if [[ `$status_batt` = Charging ]]; then
+	if [[ `$status_batt` = Charging ]] || [[ `$status_batt` = Full ]]; then
 		$NOTIFIER -i "$ICONDIR/info.png" -t 5000 "CPU `$cpu_tmp`" "Battery is `$infobatt`"
 	elif [[ `$status_batt` = Discharging ]]; then
 		$NOTIFIER -i "$ICONDIR/info.png" -t 5000 "CPU `$cpu_tmp`" "Battery is `$infobatt`"
