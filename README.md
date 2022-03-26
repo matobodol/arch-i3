@@ -73,5 +73,5 @@ EndSection
 | <kbd>Mod + Print                                                      | Screenshot Menu                         |
 | <kbd>Mod + H                                                          | Change Tiling direction (Horizontal)    |
 | <kbd>Mod + V                                                          | Change Tiling Direction (Vertical)      |
-| <kbd>F12                                                              | Change Tiling Direction (Vertical)      |
+| <kbd>F12                                                              | Networkmanager     |
 | <kbd>Mod + Alt                                                        | Battery info                            |
