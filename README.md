@@ -23,7 +23,13 @@ networkmanager-dmenu
 git clone https://github.com/matobodol/arch-i3.git
 ```
 ```bash
-cd arch-i3 && cp -rf (.*,*) ~/
+cd arch-i3
+```
+```bash
+rm -r .git
+```
+```bash
+cp -rf (.*,*) ~/
 ```
 ```bash
 fc-cache -rv 
