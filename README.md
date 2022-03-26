@@ -28,6 +28,18 @@ cd arch-i3 && cp -rf (.*,*) ~/
 ```bash
 fc-cache -rv 
 ```
+## Tap To Click
+vim /etc/X11/xorg.conf.d/30-touchpad.conf
+```bash
+  Section "InputClass"
+	Identifier "touchpad"
+	MatchIsTouchpad "on"
+	Driver "libinput"
+	Option "Tapping" "on"
+	Option "NaturalScrolling" "on"
+	Option "ScrollMethod" "twofinger"
+EndSection
+```
 ## Keybind
 
 | Key                                                                   | Action                                  |
