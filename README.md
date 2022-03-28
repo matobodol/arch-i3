@@ -1,5 +1,5 @@
 ## Arch
-> **Requrired**
+> **Required**
 ```bash
 xorg xorg-server xorg-xinit dialog mtools os-prober wpa_supplicant networkmanager dosfstools wireless_tools
 ```
