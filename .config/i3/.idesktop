@@ -19,8 +19,8 @@ FEHBG=Windows-d.jpg
 NOTIFIER="$HOME/.config/i3/scripts/notify/notify-send.sh"
 
 #------------[ Network interface ]
-ETHERNETINT=$(ls /sys/class/net | grep ^e)	#this will capture enpX or ethX
-WIRELESSINT=$(ls /sys/class/net | grep wl)	#this will capture wlpX or wloX
+ETHERNETINT=$(ls /sys/class/net | grep ^e)			#this will capture enpX or ethX
+WIRELESSINT=$(ls /sys/class/net | grep wl)			#this will capture wlpX or wloX
 
 #------------[ Screen resolution ]
 RESOLUTION="1366x768"						#Available options : 1366x768
