@@ -14,5 +14,5 @@ do
 				echo `$HOME/.config/i3/scripts/powermenu/info_bat.sh`
 				PREVIOUS=$(echo $CURRENT)
 		fi
-sleep 1
+sleep 5
 done
