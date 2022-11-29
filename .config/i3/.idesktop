@@ -29,4 +29,4 @@ RESOLUTION="1366x768"						#Available options : 1366x768 and 1920x1080
 POWEROFF="systemctl poweroff"				#systemd default
 REBOOT="systemctl reboot"					#systemd default
 LOCK="~/.config/i3/i3lock"					#i3lock
-SLEEP="suspend"								#systemd default
+SLEEP="systemctl suspend"								#systemd default
