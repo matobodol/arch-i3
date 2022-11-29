@@ -96,5 +96,5 @@ case "$1" in
 	;;
 esac
 i3-msg "restart"; sleep 0.5s
-~/.config/i3/startup &> /dev/null
+~/.config/i3/startup &>/dev/null
 
