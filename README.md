@@ -37,7 +37,7 @@ fc-cache -rv
 ## Tap To Click
 vim /etc/X11/xorg.conf.d/30-touchpad.conf
 ```bash
-  Section "InputClass"
+Section "InputClass"
 	Identifier "touchpad"
 	MatchIsTouchpad "on"
 	Driver "libinput"
